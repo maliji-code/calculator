@@ -1,6 +1,10 @@
 import Calculator from "./assets/components/Calculator";
+import Navbar from "./assets/components/Navbar";
+import Footer from "./assets/components/Footer";
 function App() {
   return (
+    <>
+    <Navbar/>
     <div
       style={{
         minHeight: "100vh",
@@ -12,6 +16,8 @@ function App() {
     >
       <Calculator />
     </div>
+    <Footer/>
+    </>
   );
 }
 
