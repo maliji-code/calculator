@@ -5,10 +5,66 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
 .logo {
   font-size: 20px;
   font-weight: 600;
   color: #333;
+}
+
+.nav-options {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-option {
+  padding: 8px 10px;
+  color: #64748b;
+  background: transparent;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.nav-option:hover,
+.nav-option.active {
+  color: #2563eb;
+  background: #eff6ff;
+}
+
+@media (max-width: 760px) {
+  .navbar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 14px 16px;
+  }
+
+  .nav-options {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .nav-option {
+    padding: 7px 9px;
+  }
+}
+
+.theme-toggle {
+  padding: 8px 12px;
+  color: #334155;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
 }

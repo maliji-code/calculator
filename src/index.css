@@ -1,0 +1,40 @@
+body {
+	margin: 0;
+}
+
+.app.dark-mode {
+	color: #e2e8f0;
+	background: #0f172a;
+}
+
+.app.dark-mode > div {
+	background: #0f172a !important;
+}
+
+.app.dark-mode .calculator,
+.app.dark-mode .footer,
+.app.dark-mode .navbar {
+	background: #1e293b;
+}
+
+.app.dark-mode .calculator h2,
+.app.dark-mode .logo,
+.app.dark-mode .footer-section h2,
+.app.dark-mode .footer-section h3,
+.app.dark-mode .history-header,
+.app.dark-mode .tool-panel label {
+	color: #e2e8f0;
+}
+
+.app.dark-mode .logo {
+	color: #60a5fa;
+}
+
+.app.dark-mode .display,
+.app.dark-mode .tool-panel input,
+.app.dark-mode .small-action,
+.app.dark-mode .history-list span {
+	color: #e2e8f0;
+	background: #0f172a;
+	border-color: #475569;
+}
